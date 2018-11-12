@@ -49,7 +49,7 @@
     <?php /*
     if (isset($_SESSION['nickname'])) {
         */ ?>
-        <!--FORMULAIRE D'ENVOI DE COMMENTAIRE SI USER CONNECTER-->
+        <!--FORMULAIRE D'ENVOI DE COMMENTAIRE -->
         <form action="index.php?action=addComment&amp;id=<?= $post['id'] ?>" method="post">
             <!-- Comments Form -->
             <div>

@@ -43,7 +43,7 @@ function addComment($postId, $author, $comment)
     }
 }
 
-//VERIFICATION DE L'EXISTENCE D'UN MEMBRE EN BDD
+//VERIFICATION DE L'EXISTENCE D'UN MEMBRE EN BDD LOrs de la connexion
 function verifyMember($userPassword, $userNickname)
 {
     $authManager = new AuthManager();
@@ -83,7 +83,7 @@ function verifyMember($userPassword, $userNickname)
          <div id="wrongPass">
             <p class="alert alert-danger"><?php  echo 'Erreur : ' . $e->getMessage(); ?></p>
 
-            <p>Pas de compte ? <a href="index.php?action=creationUser">Créer un compte</a></p>
+            <p>Vous n'etes pas administrateur ?  <a href="index.php">Retourner au blog</a></p>
         </div>
         <?php
         $content = ob_get_clean();

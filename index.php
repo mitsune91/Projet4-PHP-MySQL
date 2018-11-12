@@ -3,15 +3,15 @@ require('controller/frontend.php');
 require('controller/backend.php');
 //Routeur
 $accesdenied = 'Vous tentez d\'accéder à un espace réservé aux administrateurs !';
-const SITE_NAME = 'Blog';
-const SITE_TITLE ='Voyage en Alaska';   
+const SITE_NAME = 'Jean Forteroche';
+const SITE_TITLE ='Billet simple pour l\Alaska';
 try {
-
+// Renvoi a la page d'accueil du site avec la liste des billets
     if (isset($_GET['action'])) {
         if ($_GET['action'] == 'listPosts') {
                 listPosts();
         }
-
+        //Renvoi au billet selectionner via id
         elseif ($_GET['action'] == 'post') {
                 if (isset($_GET['id']) && $_GET['id'] > 0) {
                     post();
