@@ -13,7 +13,7 @@
 
         <p class="col align-self-end">
             Par
-            <?= $post['author'] ?> Le <?= $post['creation_date_fr'] ?>
+            <?= htmlspecialchars($post['author'] )?> Le <?= $post['creation_date_fr'] ?>
         </p>
     </div>
     <hr>

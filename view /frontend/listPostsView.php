@@ -13,7 +13,7 @@ while ($data = $posts->fetch()) {
             <h3 class="col-4"><?= htmlspecialchars($data['title']) ?></h3>
             <div class="col-4">
                 <p>
-                    <small>Le <?= $data['creation_date_fr'] ?> par <?= $data['author'] ?></small>
+                    <small>Le <?= $data['creation_date_fr'] ?> par <?= htmlspecialchars($data['author']) ?></small>
                 </p>
             </div>
         </div>

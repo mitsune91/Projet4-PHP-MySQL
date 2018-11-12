@@ -43,7 +43,7 @@ function editPost($id, $title, $author, $content)
     if ($affectedLines === false) {
         throw new Exception('Impossible d\'éditer l\'article');
 
-        header('location:index.php?action=post&id=' . $id);
+
 
     } else {
         header('location:index.php?action=post&id=' . $id);
